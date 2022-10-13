@@ -1,0 +1,473 @@
+/*-----------Colores------------
+    #FFFFFF  
+    #16213E    
+    #D9D9D9    
+    #000000
+    #22577E
+    #D9D9D9
+
+    -----------Fuentes---------- 
+    font-family: 'Roboto Condensed', sans-serif;
+
+    font-family: 'Roboto Serif', serif;
+
+    -------------Reset---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------Header--------- */
+
+header {
+    background-color: #16213E;
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 30px;
+    top: 61px;
+    font-weight: 400;
+    line-height: 75px;
+    align-items: center;
+    text-align: center;
+
+}
+
+header nav {
+    padding-top: 80px;
+    width: fit-content;
+    margin: 15px auto 0px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px 60px 30px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    /* font-weight:900; */
+    /* font-size: 17px; */
+    color: #7ACBCE;
+
+    /* text-decoration: underline wavy white; */
+}
+
+h2 {
+    font-size: 2.5rem;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Roboto Serif', serif;
+}
+
+main {
+    padding-top: 40px;
+    background-color: #22577E;
+    padding-bottom: 40px;
+}
+
+.mainIdex {
+    padding-top: 300px;
+
+}
+
+.recuadro {
+
+    width: 1500px;
+    height: 400px;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 20px auto 0px;
+
+
+}
+
+.recuadro__img {
+    height: 100%;
+    width: 50%;
+    float: left;
+    border-radius: 20px;
+}
+
+.recuadro__text {
+
+    text-align: left;
+    padding: 50px 50px 50px 800px;
+    /* display: inline; */
+    font-family: 'Roboto Serif', serif;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.mailbox {
+    background-color: #16213E;
+    width: 1500px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.mailbox__text {
+
+    text-align: center;
+    padding: 50px;
+    color: #FFFFFF;
+    /* display: inline; */
+    font-family: 'Roboto Serif', serif;
+    font-size: 2rem;
+}
+
+.mailbox__text {
+    padding-top: 110px;
+    text-align: center;
+}
+
+.barra {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.barra__input {
+    font-size: 1.5rem;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #FFFFFF;
+    height: 70px;
+    width: 600px;
+    padding-left: 20px;
+    border: 0;
+    font-family: 'Roboto Serif', serif;
+}
+
+.barra_boton {
+    background-color: #22577E;
+    border-radius: 0px 20px 20px 0px;
+    height: 70px;
+    width: 300px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-family: 'Roboto Serif', serif;
+}
+
+.barra_boton:hover {
+    background-color: white;
+    color: #22577E;
+    cursor: pointer;
+}
+
+.desc {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.desc__titulo {
+    padding: 20px;
+    background-color: #16213E;
+}
+
+.desc__text {
+    font-size: 2rem;
+    margin: 100px 450px 200px;
+    color: white;
+    font-family: 'Roboto Serif', serif;
+}
+
+.articulos {
+    margin-top: 400px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.articulo {
+    padding: 30px;
+    width: 450px;
+    height: 500px;
+    display: inline-block;
+
+}
+
+.articulo__img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.articulo__text {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    background-color: #16213E;
+    justify-content: center;
+
+}
+
+.footer__items {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin: 70px;
+
+}
+
+.footer__text {
+    float: left;
+    font-size: 2rem;
+    margin-right: 20px;
+    color: white;
+    font-family: 'Roboto Serif', serif;
+
+}
+
+.footer__img {
+    float: right;
+    height: 100px;
+    width: 100px;
+}
+
+.apartado {
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 3px solid white;
+    width: 1080px;
+    height: 90px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+
+
+}
+
+.apartado h2 {
+    margin-left: 15px;
+    text-align: left;
+    font-size: 1.5rem;
+
+}
+
+.barraB {
+    padding-top: 50px;
+    width: 1080px;
+    height: 90px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.barraB__img {
+    height: 70px;
+    width: 70px;
+
+}
+
+.barraB__input {
+    margin-left: 20px;
+    height: 70px;
+    width: 970px;
+    padding-left: 100px;
+    border: 0px;
+    font-family: 'Roboto Serif', serif;
+    background-color: #16213E;
+    color: #FFFFFF;
+    border-radius: 0px 70px 0px 70px;
+    font-size: 1.5rem;
+}
+
+.libros {
+    padding-top: 60px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.libro {
+    margin: 60px;
+    width: 300px;
+    height: 450px;
+
+}
+
+.libro__portada {
+    border: 5px white solid;
+    width: 100%;
+    height: 100%;
+}
+
+.libro__portada:hover {
+    border: 5px #16213E solid;
+    width: 100%;
+    height: 100%;
+}
+.opciones{
+    width: 1080px;
+    padding-top: 30px;
+    display: flex;
+    margin: 0 auto;
+
+    
+}
+
+.opciones__boton{
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: #16213E;
+    color: white;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+    font-family: 'Roboto Serif', serif;
+    
+}
+.titulo{
+    width: 1200px;
+    border-bottom: 2px white solid;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.titulo__caja{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+.titulo__text{
+    font-size: 2rem;
+    text-align:left;
+    color: #FFFFFF;
+    font-family: 'Roboto Serif', serif;
+}
+.formulario-ingreso {
+    padding: 20px;
+    background-color: #22577E;
+    display:flex;
+    justify-content: center;
+}
+.iniciar__input{
+    width: 1100px;
+    height: 60px;
+    margin-top: 20px;
+    display: block;
+    font-family: 'Roboto Serif', serif;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+.pregunta{
+    margin-top: 20px;
+    display: block;
+    color: white;
+}
+.formulario-registro{
+    padding: 20px;
+    background-color: #22577E;
+    display:flex;
+    justify-content: center;
+}
+.registrarse__input{
+    width: 550px;
+    height: 60px;
+    margin-top: 20px;
+    font-family: 'Roboto Serif', serif;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+.registrarse__datos{
+    width: 1100px;
+    height: 60px;
+    margin-top: 20px;
+    display: block;
+    font-family: 'Roboto Serif', serif;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+.registrarse__input-fecha{
+    width: 33%;
+    height: 60px;
+    margin-top: 20px;
+    font-family: 'Roboto Serif', serif;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+.formulario-registro span,a{
+    padding-top: 30px;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.3rem;
+}
+.registrarse__input-genero{
+    height: 30px;
+    width: 30px;
+}
+.formulario__preguntas, .datos-fecha, .datos-personales{
+    justify-content: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.formulario__boton{
+    margin-top: 40px;
+    font-size: 1.3rem;
+    font-family: 'Roboto Serif', serif;
+    height: 40px;
+    width: 180px;
+}
+.titulo{
+    margin-top:120px;
+}
+
+.preguntas-ayuda{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preguntas-ayuda__pregunta{
+    height: 60px;
+    width: 950px;
+    border-radius: 20px;
+    margin: 0% auto;
+    align-items: center;
+    padding: 10px 20px;
+    
+    background-color: #16213E;
+    padding-left: 30px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-family: 'Roboto Serif', serif;
+}
+.preguntas-ayuda__respuesta{
+    border-radius: 0px 0px 20px 20px;
+    margin: 0% auto;
+    padding: 0px 20px;
+    height: 160px;
+    width: 900px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-family: 'Roboto Serif', serif;
+    background-color: #7ACBCE;
+}
