@@ -474,7 +474,7 @@ main {
         padding-top: 2vh;
         display: grid;
         grid-template-columns: repeat(3, 30%);
-        /* grid-template-rows: 2vh 30vh; */
+        grid-template-rows: 30vh; 
         justify-content: center;
         text-align: center;
         gap: 4%;
@@ -515,9 +515,9 @@ footer ul {
 
 footer ul .footer__items {
     display: grid;
-    gap: 38%;
-    grid-template-columns: 50% 10%;
-    align-items: center;
+    gap: 33%;
+    grid-template-columns: 50% 17%;
+    align-items: ;
 }
 
 .footer__text {
@@ -531,6 +531,7 @@ footer ul .footer__items {
 .footer__img {
     height: 100%;
     border-radius: 50px;
+    float: right;
     /* width: 100%; */
 }
 
