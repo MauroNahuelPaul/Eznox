@@ -238,7 +238,7 @@ main {
 
     .recuadro__img {
         border-radius: 20px 0px 0px 20px;
-        height: 98%;
+        height: 99%;
         width: 100%;
     }
 
@@ -297,6 +297,7 @@ main {
     grid-template-rows: 6vh 12.3vh;
     justify-content: center;
     text-align: center;
+    
 }
 
 .desc__titulo {
@@ -339,8 +340,20 @@ main {
     gap: 3vh;
 
 }
+.caracteristicas-recuadro__img{
+    border-radius: 20px 0px 0px 20px;
+        height: 97%;
+        width: 100%;
+}
 
-@media (min-width:768px) {}
+
+@media (min-width:768px) {
+    .caracteristicas-recuadro__img{
+        border-radius: 20px 0px 0px 20px;
+        height: 97%;
+        width: 100%;
+    }
+}
 
 @media (min-width:1024px) {
     .caracteristicas {
@@ -353,7 +366,7 @@ main {
         gap: 3vh;
     }
 
-    .recuadro__img {
+    .caracteristicas-recuadro__img {
         border-radius: 20px 0px 0px 20px;
         height: 97%;
         width: 100%;
@@ -365,19 +378,19 @@ main {
 .sec-articulos {
     padding-top: 10vh;
     display: grid;
-    grid-template-columns: 85%;
-    grid-template-rows: 2vh 30vh;
+    grid-template-columns: 55%;
+    grid-template-rows: 2vh 40vh;
     justify-content: center;
     text-align: center;
     gap: 2vh;
-    padding-bottom: 10vh;
+    padding-bottom: 30vh;
 }
 
 .articulos {
     padding-top: 2vh;
     display: grid;
-    grid-template-columns: repeat(3, 30%);
-    /* grid-template-rows: 2vh 30vh; */
+    /* grid-template-columns: repeat(3, 30%); */
+    grid-template-rows: repeat(3,20vh);
     justify-content: center;
     text-align: center;
     gap: 2vh;
@@ -392,7 +405,8 @@ main {
 
 .articulo__img {
     width: 100%;
-    border-radius: 20%;
+    height: 80%;
+    border-radius: 20px;
 }
 
 .articulo__text {
@@ -406,10 +420,11 @@ main {
         padding-top: 10vh;
         display: grid;
         grid-template-columns: 85%;
-        grid-template-rows: 2vh 30vh;
+        grid-template-rows: 2vh 20vh;
         justify-content: center;
         text-align: center;
         gap: 2vh;
+        
     }
 
     .articulos {
@@ -439,6 +454,7 @@ main {
         font-family: 'Roboto Serif', serif;
         font-size: 1rem;
     }
+    
 }
 
 @media (min-width: 1024px) {
@@ -449,7 +465,8 @@ main {
         grid-template-rows: 2vh 30vh;
         justify-content: center;
         text-align: center;
-        gap: 2vh;
+        gap: 4vh;
+        padding-bottom: 20vh;
     }
 
     .articulos {
