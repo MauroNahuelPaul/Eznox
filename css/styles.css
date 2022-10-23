@@ -517,7 +517,6 @@ footer ul .footer__items {
     display: grid;
     gap: 33%;
     grid-template-columns: 50% 17%;
-    align-items: ;
 }
 
 .footer__text {
