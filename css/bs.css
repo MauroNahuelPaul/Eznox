@@ -1,0 +1,94 @@
+/*-----------Colores------------
+    #FFFFFF  
+    #16213E    
+    #D9D9D9    
+    #000000
+    #22577E
+    #D9D9D9
+
+    -----------Fuentes---------- 
+    font-family: 'Roboto Condensed', sans-serif;
+
+    font-family: 'Roboto Serif', serif;
+
+    -------------Reset---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #16213E;
+    --secondary-color: #22577E;
+    --font-color: #FFFFFF;
+    --primary-font-style: 'Roboto Condensed', sans-serif;
+    --secondary-font-style: font-family: 'Roboto Serif', serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.bg-header {
+    background-color: #16213E;
+}
+
+.navbar .titulo-pagina {
+    color: --font-color;
+    font-family: --primary-font-style;
+}
+
+.nav-link {
+    font-family: --secondary-font-style;
+}
+
+.nav-item .nav-link.active {
+    color: var(--secondary-color);
+}
+
+.text {
+    font-family: --secondary-font-style;
+    color: var(--font-color)
+}
+
+.bg-main {
+    background-color: var(--secondary-color);
+}
+
+.img-article {
+    object-fit: cover;
+}
+
+.text-article {
+    text-align: left;
+}
+
+.email {
+    background-color: var(--primary-color);
+}
+
+.bg-section {
+    background-color: var(--primary-color);
+}
+
+footer .bi {
+    color: var(--font-color);
+}

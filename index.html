@@ -10,42 +10,51 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;1,8..144,100&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bs.css">
     <title>Eznox-Inicio</title>
 </head>
 
 <body>
-    <header>
-        <h1>E Z N O X</h1>
-        <nav>
-            <ul class="navBar">
-                <li>
-                    <a href="./index.html">INICIO</a>
+    <header class="p-3 navbar navbar-expand-lg bg-header">
+
+        <a class="display-1 fw-bold d-flex justify-content-center titulo-pagina" href="#">E Z N O X</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav h5">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">INICIO</a>
                 </li>
-                <li>
-                    <a href="./pages/biblioteca.html">BIBLIOTECA</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/biblioteca.html">BIBLIOTECA</a>
                 </li>
-                <li>
-                    <a href="./pages/directorio.html">DIRECTORIO</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/directorio.html">DIRECTORIO</a>
                 </li>
-                <li>
-                    <a href="./pages/cuenta.html">CUENTA</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/cuenta.html">CUENTA</a>
                 </li>
-                <li>
-                    <a href="./pages/ayuda.html">AYUDA</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/ayuda.html">AYUDA</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="presentacion">
-            <section class="nosotros">
-                <h2>NOSOTROS</h2>
-                <article data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="recuadro">
-                    <img src="./imgs/img_prueba.png" alt="" class="recuadro__img">
-                    <span class="recuadro__text">
+    <main class="bg-main pb-3">
+        <div class="container text-center py-5 text">
+            <section class="">
+                <h2 class="text">NOSOTROS</h2>
+                <article class="row my-3 mx-2 border rounded-4 overflow-hidden " data-aos="fade-down"
+                    data-aos-easing="linear" data-aos-duration="1500" class="recuadro">
+                    <img class="col-6 img-fluid img-article" src="./imgs/Libro-abierto.jpg" alt="">
+                    <span class="col-6 text-article">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, debitis harum dolore
                         ipsam illum vel veniam in nulla provident cum repellendus tempora sed nisi ut, possimus
                         necessitatibus temporibus quibusdam rem.
@@ -53,92 +62,98 @@
                 </article>
             </section>
 
-            <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="mailbox">
-                <div class="mailbox__text">
+            <section class="email rounded-4 py-4" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">
+                <div class="email m-3">
                     <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ex repellat fuga explicabo
                         impedit
                         dignissimos, vitae error cumque at! Unde, blanditiis facere asperiores nulla corrupti repellat?
                         Dolores eos earum illo.</span>
                 </div>
-                <div class="barra">
-                    <input class="barra__input" type="barra__email" placeholder="example@gmail.com">
-                    <button name="barra_boton" type="button" class="barra_boton">COMENZAR ></button>
+                <div class="container row mx-auto">
+                    <input class="col-8 rounded-start" type="barra__email" placeholder="example@gmail.com">
+                    <button class="col-4 rounded-end" name="barra_boton" type="button">COMENZAR</button>
                     <div>
             </section>
         </div>
 
-        <section class="desc">
-            <h2 class="desc__titulo">TITULO</h2>
-            <div class="desc__text">
+        <section class="">
+            <h2 class="bg-section text-center text p-2">TITULO</h2>
+            <div class="container text-center text">
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dignissimos ipsa, ratione
                     magnam quasi sint atque eius officia impedit explicabo aspernatur consequuntur quaerat deleniti.
                     Cupiditate dolor hic enim cumque animi?</span>
             </div>
         </section>
-        <section class="caracteristicas">
-            <article data-aos="zoom-in-down" class="recuadro">
-                <img src="./imgs/img_prueba.png" alt="" class="caracteristicas-recuadro__img">
-                <span class="recuadro__text">
+        <section class="container text">
+            <article class="row my-5 mx-2 border rounded-4 overflow-hidden" data-aos="zoom-in-down" >
+                <img class="col-6 img-fluid img-article" src="./imgs/img_prueba.png" alt="" >
+                <span class="col-6 text-article">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, debitis harum dolore
                     ipsam illum vel veniam in nulla provident cum repellendus tempora sed nisi ut, possimus
                     necessitatibus temporibus quibusdam rem.
                 </span>
             </article>
-            <article data-aos="zoom-in-down" class="recuadro">
-                <img src="./imgs/img_prueba.png" alt="" class="caracteristicas-recuadro__img">
-                <span class="recuadro__text">
+            <article class="row my-5 mx-2 border rounded-4 overflow-hidden" data-aos="zoom-in-down" >
+                <img class="col-6 img-fluid img-article" src="./imgs/img_prueba.png" alt="" >
+                <span class="col-6 text-article">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, debitis harum dolore
                     ipsam illum vel veniam in nulla provident cum repellendus tempora sed nisi ut, possimus
                     necessitatibus temporibus quibusdam rem.
                 </span>
             </article>
-            <article data-aos="zoom-in-down" class="recuadro">
-                <img src="./imgs/img_prueba.png" alt="" class="caracteristicas-recuadro__img">
-                <span class="recuadro__text">
+            <article class="row my-5 mx-2 border rounded-4 overflow-hidden" data-aos="zoom-in-down" >
+                <img class="col-6 img-fluid img-article" src="./imgs/img_prueba.png" alt="" >
+                <span class="col-6 text-article">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, debitis harum dolore
                     ipsam illum vel veniam in nulla provident cum repellendus tempora sed nisi ut, possimus
                     necessitatibus temporibus quibusdam rem.
                 </span>
             </article>
         </section>
-        <section class="sec-articulos">
-            <div>
-                <h2>ARTICULOS</h2>
+
+        <section class="container text-center text">
+            <div class="">
+                <h2 class="">ARTICULOS</h2>
             </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="articulos">
-                <article class="articulo">
-                    <img src="./imgs/img_prueba.png" alt="" class="articulo__img">
-                    <span class="articulo__text">Lorem, ipsum dolor.</span>
+            <div class="" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <article class="mx-5 articulo">
+                    <img class="img-fluid  border rounded-4" src="./imgs/img_prueba.png" alt="" >
+                    <h3 class="">Lorem, ipsum dolor.</h3>
                 </article>
-                <article class="articulo">
-                    <img src="./imgs/img_prueba.png" alt="" class="articulo__img">
-                    <span class="articulo__text">Lorem, ipsum dolor.</span>
+                <article class="mx-5 my-4 articulo">
+                    <img class="img-fluid  border rounded-4" src="./imgs/img_prueba.png" alt="" >
+                    <h3 class="">Lorem, ipsum dolor.</h3>
                 </article>
-                <article class="articulo">
-                    <img src="./imgs/img_prueba.png" alt="" class="articulo__img">
-                    <span class="articulo__text">Lorem, ipsum dolor.</span>
+                <article class="mx-5 articulo">
+                    <img class="img-fluid  border rounded-4" src="./imgs/img_prueba.png" alt="" >
+                    <h3 class="">Lorem, ipsum dolor.</h3>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <ul>
-            <li class="footer__items">
-                <a class="footer__text" href="">Lorem ipsum dolor sit.</a>
-                <img class="footer__img" src="./imgs/logo_twitter.png" alt="logo_twitter">
+    <footer class="bg-header">
+        <ul class="mx-3 py-3">
+            <li class="d-flex justify-content-between ">
+                <a class="" href="">Lorem ipsum dolor sit.</a>
+                <i class="bi bi-twitter"></i>
             </li>
-            <li class="footer__items">
+            <li class=" my-1 d-flex justify-content-between">
                 <a class="footer__text" href="">Lorem ipsum dolor sit.</a>
-                <img class="footer__img" src="./imgs/logo_ig.png" alt="logo_instragram">
+                <i class="bi bi-facebook"></i>
             </li>
-            <li class="footer__items">
+            <li class="d-flex justify-content-between">
                 <a class="footer__text" href="">Lorem ipsum dolor sit.</a>
-                <img class="footer__img" src="./imgs/logo_facebook.png" alt="logo_facebook">
+                <i class="bi bi-instagram"></i>
             </li>
         </ul>
 
     </footer>
+    <!-- BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
