@@ -46,11 +46,25 @@ a:visited {
     text-decoration: none;
     color: var(--font-color);
 }
+.nav-item .nav-link:hover{
+    color: var(--secondary-color);
+    text-decoration:underline overline ;
+    transition: 0.5s;
+}
+
+a:hover{
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    transition: 1s;
+    color: var(--font-color);
+}
 
 .bg-header {
     background-color: #16213E;
 }
-
+.boton-opciones{
+    height: 60px;
+}
 .navbar .titulo-pagina {
     color: --font-color;
     font-family: --primary-font-style;
@@ -74,6 +88,7 @@ a:visited {
 }
 
 .img-article {
+    padding: 0;
     object-fit: cover;
 }
 
@@ -91,4 +106,21 @@ a:visited {
 
 footer .bi {
     color: var(--font-color);
+}
+
+.barra__email:focus{
+    outline: none;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    transition: 0.5s;
+}
+.barra__boton {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    font-family: var(--secondary-font-style)
+}
+.barra__boton:hover{
+    background-color: var(--font-color);
+    color: var(--secondary-color);
+    transition:0.5s;
 }
