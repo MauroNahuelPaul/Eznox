@@ -32,6 +32,7 @@ a {
 :root {
     --primary-color: #16213E;
     --secondary-color: #22577E;
+    --tercer-color:#7ACBCE;
     --font-color: #FFFFFF;
     --primary-font-style: 'Roboto Condensed', sans-serif;
     --secondary-font-style: font-family: 'Roboto Serif', serif;
@@ -176,4 +177,85 @@ footer a:hover ,i:hover{
     border: 5px solid var(--primary-color);
     transition: 0.5s;
     cursor:pointer;
+}
+.filtros--boton {
+    background-color: #16213E;
+    color: white;
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    padding-left: 10px;
+    font-family: 'Roboto Serif', serif;
+}
+.filtros--boton:hover{
+    background-color: var(--font-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: 0.5s;
+}
+.formulario__input{
+    width: 100%;
+}
+@media (min-width:992px) {
+    .datos-personales>.formulario__input{
+        width: 49%;
+    }
+}
+.form-boton:hover, .formulario__input:focus{
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+.formulario__input:hover{
+    background-color: var(--secondary-color);
+    
+    border: 2px solid var(--primary-color);
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+.acordion__encabezado:not(.collapsed){
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+.acordion__encabezado{
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    border-radius: 20px;
+    /* border: 2px var(--primary-color) 20px; */
+}
+.acordion__texto{
+    background-color: var(--tercer-color);
+    color: black;
+    font-family: --secondary-font-style;
+    border-bottom: 2px;
+}
+.accordion-item,.accordion-header{
+    background-color: transparent;
+    border: 0;
+}
+@media (min-width:992px) {
+    .acordion__encabezado:not(.collapsed){
+        font-size: 2rem;
+    }
+    .acordion__encabezado{
+        font-size: 2rem;
+        /* border: 2px var(--primary-color) 20px; */
+    }
+    .acordion__texto{
+        font-size: 1.5rem;
+    }
+    .acordion__texto>h3{
+        font-size: 2rem;
+    }
+}
+.ayuda-main{
+    height: 800px;
+}
+@media (min-width:992px)  {
+    .ayuda-main{
+        height: 1080px;
+    }
 }

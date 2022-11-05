@@ -10,122 +10,126 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;1,8..144,100&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Eznox-Directorio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bs.css">
+    <title>Directorio | Eznox</title>
 </head>
 
 <body>
-    <header>
-        <h1>E Z N O X</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">INICIO</a>
+    <header class="p-3 navbar navbar-expand-lg bg-header d-lg-block">
+        <a class="display-1 fw-bold d-flex justify-content-center titulo-pagina " href="../index.html">E Z N O X</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="boton-opciones" src="../imgs/logo_options.png" alt="">
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end justify-content-lg-center my-lg-5 "
+            id="navbarNavDropdown">
+            <ul class="navbar-nav h5 ">
+                <li class="nav-item mx-lg-5">
+                    <a class="nav-link" href="../index.html">INICIO</a>
                 </li>
-                <li>
-                    <a href="./biblioteca.html">BIBLIOTECA</a>
+                <li class="nav-item mx-lg-5">
+                    <a class="nav-link" href="./biblioteca.html">BIBLIOTECA</a>
                 </li>
-                <li>
-                    <a href="./directorio.html">DIRECTORIO</a>
+                <li class="nav-item mx-lg-5">
+                    <a class="nav-link active" href="./directorio.html">DIRECTORIO</a>
                 </li>
-                <li>
-                    <a href="./cuenta.html">CUENTA</a>
+                <li class="nav-item mx-lg-5">
+                    <a class="nav-link" href="./cuenta.html">CUENTA</a>
                 </li>
-                <li>
-                    <a href="ayuda.html">AYUDA</a>
+                <li class="nav-item mx-lg-5">
+                    <a class="nav-link" href="./ayuda.html">AYUDA</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="apartado">
-            <h2>EN<br>COLLECCIÓN</h2>
+    <main class="bg-main py-3">
+        <div class="container">
+            <div class=" my-2 border rounded-4 apartado text ">
+                <h2 class="pt-1 ps-3">DIRECTORIO</h2>
+            </div>
         </div>
-        <section class="opciones">
-            <select name="genero" id="" class="opciones__boton">
-                <option value="">Género</option>
-                <option value="accion">Acción</option>
-                <option value="aventura">Aventura</option>
-                <option value="psicoloco">Psicoloco</option>
-                <option value="romance">Romance</option>
-            </select>
-            <select name="año" id="" class="opciones__boton">
-                <option value="">Año</option>
-                <option value="1900">1900</option>
-                <option value="1800">1800</option>
-                <option value="1700">1700</option>
-                <option value="...">...</option>
-            </select>
-            <select name="orden" id="" class="opciones__boton">
-                <option value="">Orden</option>
-                <option value="a-z">A-Z</option>
-                <option value="z-a">Z-A</option>
-                <option value="calificacion">Calificación</option>
-                <option value="recientes">Recientes</option>
-            </select>
-            <select name="estado" id="" class="opciones__boton">
-                <option value="">Estado</option>
-                <option value="finalizado">Finalizado</option>
-                <option value="en emision">En emisión</option>
-                <option value="abandonado">Abandonado</option>
-            </select>
-            <button name="filtrar" type="button" class="opciones__boton">Filtrar</button>
+        <div class="container">
+            <section class="text-center my-3">
+                <select class="filtros--boton m-2" name="genero " id="">
+                    <option value="">Género</option>
+                    <option value="accion">Acción</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="psicoloco">Psicoloco</option>
+                    <option value="romance">Romance</option>
+                </select>
+                <select class="filtros--boton m-2" name="año mx-5" id="" >
+                    <option value="">Año</option>
+                    <option value="1900">1900</option>
+                    <option value="1800">1800</option>
+                    <option value="1700">1700</option>
+                    <option value="...">...</option>
+                </select>
+                <select class="filtros--boton m-2" name="orden mx-5" id="" >
+                    <option value="">Orden</option>
+                    <option value="a-z">A-Z</option>
+                    <option value="z-a">Z-A</option>
+                    <option value="calificacion">Calificación</option>
+                    <option value="recientes">Recientes</option>
+                </select>
+                <select class="filtros--boton m-2" name="estado" id="" >
+                    <option value="">Estado</option>
+                    <option value="finalizado">Finalizado</option>
+                    <option value="en emision">En emisión</option>
+                    <option value="abandonado">Abandonado</option>
+                </select>
+                <button class="filtros--boton m-2" name="filtrar" type="button" >Filtrar</button>
+            </section>
+        </div>
+        <div class="container px-4">
+            <div class="row barraB align-items-center d-block text">
+                <i class="ps-3 bi bi-search text"></i>
+                <input class="col-9 barraB__input" type="search" name="text" placeholder="Buscar" />
+            </div>
+        </div>
+        <section class="container text-center">
+            <img class="libro__portada my-5 mx-4" data-aos="flip-up" src="../imgs/portada_libro.png" alt="">
+            <img class="libro__portada my-5 mx-4" data-aos="flip-up" src="../imgs/portada_libro1.png" alt="">
+            <img class="libro__portada my-5 mx-4" data-aos="flip-up" src="../imgs/portada_libro2.png" alt="">
+            <img class="libro__portada my-5 mx-4" data-aos="flip-up" src="../imgs/portada_libro3.png" alt="">
+            <img class="libro__portada my-5 mx-4" data-aos="flip-up" src="../imgs/portada_libro4.png" alt="">
+            <img class="libro__portada my-5 mx-4" data-aos="flip-up" src="../imgs/portada_libro.png" alt="">
+            <img class="libro__portada my-5 mx-4" data-aos="flip-up" src="../imgs/portada_libro1.png" alt="">
+            <img class="libro__portada my-5 mx-4" data-aos="flip-up" src="../imgs/portada_libro2.png" alt="">
+            <img class="libro__portada my-5 mx-4" data-aos="flip-up" src="../imgs/portada_libro3.png" alt="">
+            <img class="libro__portada my-5 mx-4" data-aos="flip-up" src="../imgs/portada_libro4.png" alt="">
         </section>
-        <section class="barraB">
-            <img src="../imgs/lupa.png" alt="lupa" class="barraB__img">
-            <input type="text" name="text" placeholder="Buscar" class="barraB__input" />
-        </section>
-        <section class="libros">
-            <article class="libro">
-                <img src="../imgs/portada_libro.png" alt="" class="libro__portada">
-            </article>
-            <article class="libro">
-                <img src="../imgs/portada_libro1.png" alt="" class="libro__portada">
-            </article>
-            <article class="libro">
-                <img src="../imgs/portada_libro2.png" alt="" class="libro__portada">
-            </article>
-            <article class="libro">
-                <img src="../imgs/portada_libro3.png" alt="" class="libro__portada">
-            </article>
-            <article class="libro">
-                <img src="../imgs/portada_libro4.png" alt="" class="libro__portada">
-            </article>
-            <article class="libro">
-                <img src="../imgs/portada_libro.png" alt="" class="libro__portada">
-            </article>
-            <article class="libro">
-                <img src="../imgs/portada_libro1.png" alt="" class="libro__portada">
-            </article>
-            <article class="libro">
-                <img src="../imgs/portada_libro2.png" alt="" class="libro__portada">
-            </article>
-            <article class="libro">
-                <img src="../imgs/portada_libro3.png" alt="" class="libro__portada">
-            </article>
-            <article class="libro">
-                <img src="../imgs/portada_libro4.png" alt="" class="libro__portada">
-            </article>
-        </section>
+
 
     </main>
-    <footer>
-        <ul>
-            <li class="footer__items">
-                <a class="footer__text" href="">Lorem ipsum dolor sit.</a>
-                <img class="footer__img" src="../imgs/logo_twitter.png" alt="logo_twitter">
+    <footer class="bg-header">
+        <ul class="mx-3 py-3">
+            <li class="d-flex justify-content-between ">
+                <a class="" href="#">Copyright 2022-2022 by Refsnes Data.</a>
+                <a href=""><i class="bi bi-twitter"></i></a>
             </li>
-            <li class="footer__items">
-                <a class="footer__text" href="">Lorem ipsum dolor sit.</a>
-                <img class="footer__img" src="../imgs/logo_ig.png" alt="logo_instragram">
+            <li class=" my-1 d-flex justify-content-between">
+                <a class="footer__text" href="#">Todos los derechos reservados</a>
+                <a href=""><i class="bi bi-facebook"></i></a>
             </li>
-            <li class="footer__items">
-                <a class="footer__text" href="">Lorem ipsum dolor sit.</a>
-                <img class="footer__img" src="../imgs/logo_facebook.png" alt="logo_facebook">
+            <li class="d-flex justify-content-between">
+                <a class="footer__text" href="#">Mauro Nahuel Paul</a>
+                <a href=""><i class="bi bi-instagram"></i></a>
             </li>
         </ul>
-
     </footer>
+    <!-- BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

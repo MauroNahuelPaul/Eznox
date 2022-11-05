@@ -10,110 +10,124 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;1,8..144,100&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Eznox-Cuenta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bs.css">
+    <title>Cuenta | Eznox</title>
 </head>
 
 <body>
-    <header>
-        <h1>E Z N O X</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">INICIO</a>
+    <header class="p-3 navbar navbar-expand-lg bg-header d-lg-block">
+        <a class="display-1 fw-bold d-flex justify-content-center titulo-pagina " href="../index.html">E Z N O X</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="boton-opciones" src="../imgs/logo_options.png" alt="">
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end justify-content-lg-center my-lg-5 "
+            id="navbarNavDropdown">
+            <ul class="navbar-nav h5 ">
+                <li class="nav-item mx-lg-5">
+                    <a class="nav-link" href="../index.html">INICIO</a>
                 </li>
-                <li>
-                    <a href="./biblioteca.html">BIBLIOTECA</a>
+                <li class="nav-item mx-lg-5">
+                    <a class="nav-link " href="./biblioteca.html">BIBLIOTECA</a>
                 </li>
-                <li>
-                    <a href="./directorio.html">DIRECTORIO</a>
+                <li class="nav-item mx-lg-5">
+                    <a class="nav-link" href="./directorio.html">DIRECTORIO</a>
                 </li>
-                <li>
-                    <a href="./cuenta.html">CUENTA</a>
+                <li class="nav-item mx-lg-5">
+                    <a class="nav-link active" href="./cuenta.html">CUENTA</a>
                 </li>
-                <li>
-                    <a href="ayuda.html">AYUDA</a>
+                <li class="nav-item mx-lg-5">
+                    <a class="nav-link" href="./ayuda.html">AYUDA</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="titulo">
-            <div class="titulo__caja">
-                <span class="titulo__text">Iniciar sesión</span>
+    <main class="bg-main py-3 text">
+        <div class="container">
+            <div class="border-bottom my-4">
+                <h2 class="h2 text">Iniciar sesión</h2>
             </div>
-        </section>
-        <section class="formulario-ingreso">
-            <form action="" class="iniciar">
-                <input class="iniciar__input" type="email" placeholder="Correo electronico">
-                <input class="iniciar__input" type="password" placeholder="Contraseña">
-                <section class="formulario__preguntas">
-                    <a href="" class="pregunta">¿Olvidaste tu contraseña?</a>
-                    <a href="#formulario-registro" class="pregunta">¿No tenés cuenta?</a>
-                    <button name="iniciar-sesion" type="button" class="formulario__boton">Iniciar sesión</button>
-                </section>
-            </form>
-        </section>
-        <section class="titulo">
-            <div class="titulo__caja">
-                <span class="titulo__text">Regístrate</span>
+            <section class="formulario-ingreso">
+                <form class="" action="">
+                    <div class="">
+                        <input class="d-block formulario__input mb-3 ps-2" type="email"
+                            placeholder="Correo electrónico">
+                        <input class="d-block formulario__input mb-3 ps-2" type="password" placeholder="Contraseña">
+                    </div>
+                    <section class="">
+                        <a class=" mb-1 px-2" href="">¿Olvidaste tu contraseña?</a>
+                        <br>
+                        <a class=" mb-3 px-2" href="#formulario-registro">¿No tenés cuenta?</a>
+                        <br>
+                        <button class="form-boton mt-3 px-2" name="iniciar-sesion" type="button">Iniciar sesión</button>
+                    </section>
+                </form>
+            </section>
+
+            <div class="border-bottom my-4 pt-5">
+                <h2 class="h2 text">Regístrate</h2>
             </div>
-        </section>
-        <section class="formulario-registro" id="formulario-registro">
-            <form action="">
-                <div class="datos-personales">
-                    <input class="registrarse__input" type="email" placeholder="Nombres">
-                    <input class="registrarse__input" type="password" placeholder="Apellidos">
-                </div>
-                <div class="datos-usuario">
-                    <input class="registrarse__datos" type="email" placeholder="Correo electronico">
-                    <input class="registrarse__datos" type="password" placeholder="Contraseña">
-                    <input class="registrarse__datos" type="password" placeholder="Confirmar contraseña">
-                </div>
-                <div class="datos-fecha">
-                <span>Fecha de Nacimiento:</span>
-                <div class="datos-personales">
-                    <input class="registrarse__input-fecha" type="datetime" placeholder="Día:">
-                    <input class="registrarse__input-fecha" type="week" placeholder="Mes:">
-                    <input class="registrarse__input-fecha" type="month" placeholder="Año:">
-                </div>
-            </div>
-                <div class="datos-personales">
-                    <span>Hombre:</span><input class="registrarse__input-genero" type="checkbox">
-                    <span>Mujer:</span><input class="registrarse__input-genero" type="checkbox">
-                </div>
-                <div class="formulario__preguntas">
-                    <a href="" class="pregunta">¿Porqué debo brindar esta información?</a>
-                    <span>Al hacer clic en el Regístrate, muestras tu conformidad con nuestras Condiciones y aceptas
-                        haber<br>leído nuestra Política de uso de datos, incluida la sección sobre Uso de
-                        cookies.</span>
-                </div>
-                <div class="registrase__datos">
-                    <button name="registrase-sesion" type="button" class="formulario__boton">Regístrate</button>
-                </div>
-            </form>
-        </section>
-
-
-
+            <section class="formulario-registro" id="formulario-registro">
+                <form action="">
+                    <div class="datos-personales">
+                        <input class="formulario__input mb-3 ps-2 " type="email" placeholder="Nombres">
+                        <input class="formulario__input mb-3 ps-2 float-lg-end" type="password" placeholder="Apellidos">
+                    </div>
+                    <div class="">
+                        <input class="formulario__input mb-3 ps-2" type="email" placeholder="Correo electrónico">
+                        <input class="formulario__input mb-3 ps-2" type="password" placeholder="Contraseña">
+                        <input class="formulario__input mb-3 ps-2" type="password" placeholder="Confirmar contraseña">
+                    </div>
+                    <div class="">
+                        <h3 class="text">Fecha de Nacimiento:</h3>
+                        <input class="" type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01"
+                            max="2030-12-31">
+                    </div>
+                    <div class="py-3">
+                        <label class="text mx-1">Hombre:</label><input class="me-4" type="checkbox">
+                        <label class="text mx-1">Mujer:</label><input class="me-4" type="checkbox">
+                    </div>
+                    <a class="text px-2" href="#" >¿Porqué debo brindar esta información?</a>
+                    <span class="text d-block mt-3">
+                        Al hacer clic en el Regístrate, muestras tu conformidad con nuestras
+                        Condiciones y aceptas haber leído nuestra Política de uso de datos, incluida la sección sobre
+                        Uso de cookies.</span>
+                    <button class="form-boton my-3 px-2" name="" type="button">Regístrate</button>
+                </form>
+            </section>
+        </div>
     </main>
-    <footer>
-        <ul>
-            <li class="footer__items">
-                <a class="footer__text" href="">Lorem ipsum dolor sit.</a>
-                <img class="footer__img" src="../imgs/logo_twitter.png" alt="logo_twitter">
+
+    <footer class="bg-header">
+        <ul class="mx-3 py-3">
+            <li class="d-flex justify-content-between ">
+                <a class="" href="#">Copyright 2022-2022 by Refsnes Data.</a>
+                <a href=""><i class="bi bi-twitter"></i></a>
             </li>
-            <li class="footer__items">
-                <a class="footer__text" href="">Lorem ipsum dolor sit.</a>
-                <img class="footer__img" src="../imgs/logo_ig.png" alt="logo_instragram">
+            <li class=" my-1 d-flex justify-content-between">
+                <a class="footer__text" href="#">Todos los derechos reservados</a>
+                <a href=""><i class="bi bi-facebook"></i></a>
             </li>
-            <li class="footer__items">
-                <a class="footer__text" href="">Lorem ipsum dolor sit.</a>
-                <img class="footer__img" src="../imgs/logo_facebook.png" alt="logo_facebook">
+            <li class="d-flex justify-content-between">
+                <a class="footer__text" href="#">Mauro Nahuel Paul</a>
+                <a href=""><i class="bi bi-instagram"></i></a>
             </li>
         </ul>
-
     </footer>
+
+    <!-- BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
