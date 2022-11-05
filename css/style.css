@@ -12,36 +12,8 @@
     font-family: 'Roboto Serif', serif;
 
     -------------Reset---------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-ul,
-ol {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
 
-a {
-    text-decoration: none;
-}
-
-:root {
-    --primary-color: #16213E;
-    --secondary-color: #22577E;
-    --tercer-color:#7ACBCE;
-    --font-color: #FFFFFF;
-    --primary-font-style: 'Roboto Condensed', sans-serif;
-    --secondary-font-style: font-family: 'Roboto Serif', serif;
-}
-
-a {
-    text-decoration: none;
-    color: var(--font-color);
-}
 
 a:visited {
     text-decoration: none;
@@ -49,7 +21,7 @@ a:visited {
 }
 
 .nav-item .nav-link:hover {
-    color: var(--secondary-color);
+    color: #8BBCE0;
     text-decoration: underline;
     transition: 0.5s;
 }
@@ -80,7 +52,7 @@ a:hover {
 }
 
 .nav-item .nav-link.active {
-    color: var(--secondary-color);
+    color: #8BBCE0;
 }
 
 .text {
