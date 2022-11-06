@@ -1,0 +1,20 @@
+.img-article {
+    padding: 0;
+    object-fit: cover;
+}
+.text-article {
+    text-align: left;
+}
+
+// Libros
+.libro__portada {
+    width: 310px;
+    height: 450px;
+    border: 2px solid white;
+}
+
+.libro__portada:hover {
+    border: 5px solid $primary-color;
+    transition: 0.5s;
+    cursor:pointer;
+}

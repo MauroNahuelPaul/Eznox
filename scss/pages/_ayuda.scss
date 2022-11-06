@@ -1,0 +1,44 @@
+.acordion__encabezado:not(.collapsed){
+    background-color: $primary-color;
+    color: $font-color;
+}
+.acordion__encabezado{
+    outline: none;
+    background-color: $primary-color;
+    color: $font-color;
+    border-radius: 20px;
+    /* border: 2px $primary-color) 20px; */
+}
+.acordion__texto{
+    background-color: $tercer-color;
+    color: black;
+    font-family: $secondary-font-style;
+    border-bottom: 2px;
+}
+.accordion-item,.accordion-header{
+    background-color: transparent;
+    border: 0;
+}
+@media (min-width:992px) {
+    .acordion__encabezado:not(.collapsed){
+        font-size: 2rem;
+    }
+    .acordion__encabezado{
+        font-size: 2rem;
+        /* border: 2px $primary-color) 20px; */
+    }
+    .acordion__texto{
+        font-size: 1.5rem;
+    }
+    .acordion__texto>h3{
+        font-size: 2rem;
+    }
+}
+.ayuda-main{
+    height: 800px;
+}
+@media (min-width:992px)  {
+    .ayuda-main{
+        height: 1080px;
+    }
+}

@@ -13,5 +13,53 @@ ol {
 
 a {
     text-decoration: none;
-    color: var(--font-color);
+    color: $font-color;
+}
+
+a:visited {
+    text-decoration: none;
+    color: $font-color;
+}
+
+a:hover {
+    border-radius: 20px;
+    background-color: $primary-color;
+    transition: 1s;
+    color: $font-color;
+    cursor: pointer
+}
+
+.nav-link {
+    font-family: $secondary-font-style;
+}
+
+.text {
+    font-family: $secondary-font-style;
+    color: $font-color;
+}
+.bg-main {
+    background-color: $secondary-color;
+}
+.bg-section {
+    background-color: $primary-color;
+}
+footer a:hover ,i:hover{
+    color: $secondary-color;
+    text-decoration: underline;
+}
+
+.barraB{
+    background-color: #16213E;
+    border-radius: 0px 20px 0px 20px;
+    font-size: 2rem;
+}
+.barraB__img{
+    height: 60px;
+}
+.barraB__input{
+    background-color: transparent;
+    color: $font-color;
+    border: 0;
+    outline: none;
+    height: 70px;
 }

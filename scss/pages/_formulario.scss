@@ -1,0 +1,25 @@
+.email {
+    background-color: $primary-color;
+}
+.formulario__input{
+    width: 100%;
+}
+@media (min-width:992px) {
+    .datos-personales>.formulario__input{
+        width: 49%;
+    }
+}
+.form-boton:hover, .formulario__input:focus{
+    background-color: $secondary-color;
+    border: 2px solid $primary-color;
+    border-radius: 20px;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+.formulario__input:hover{
+    background-color: $secondary-color;
+    
+    border: 2px solid $primary-color;
+    color: #FFFFFF;
+    transition: 0.5s;
+}

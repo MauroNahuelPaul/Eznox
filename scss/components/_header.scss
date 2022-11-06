@@ -1,0 +1,21 @@
+.bg-header {
+    background-color: #16213E;
+}
+.boton-opciones {
+    height: 60px;
+}
+.nav-item .nav-link:hover {
+    color: #8BBCE0;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.navbar .titulo-pagina {
+    color: $font-color;
+    font-family: $primary-font-style;
+}
+.nav-link {
+    font-family: $secondary-font-style;
+}
+.nav-item .nav-link.active {
+    color: #8BBCE0;
+}

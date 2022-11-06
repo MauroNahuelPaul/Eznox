@@ -1,0 +1,15 @@
+.filtros--boton {
+    background-color: #16213E;
+    color: white;
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    padding-left: 10px;
+    font-family: 'Roboto Serif', serif;
+}
+.filtros--boton:hover{
+    background-color: $font-color;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    transition: 0.5s;
+}
