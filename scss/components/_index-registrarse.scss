@@ -1,34 +1,22 @@
-.email {
+.email{
     background-color: $primary-color;
-}
-.barra__email:focus {
-    outline: none;
-    background-color: $secondary-color;
-    color: $font-color;
-    transition: 0.5s;
-}
-
-.barra__boton {
-    background-color: $secondary-color;
-    color: $font-color;
-    font-family: $secondary-font-style;
-    &:hover {
-        background-color: $font-color;
-        color: $secondary-color;
-        transition: 0.5s;
+    .barra{
+        &__email:focus {
+            outline: none;
+            background-color: $secondary-color;
+            color: $font-color;
+            transition: 0.5s;
+        }
+        &__boton {
+            background-color: $secondary-color;
+            color: $font-color;
+            font-family: $secondary-font-style;
+            &:hover {
+                background-color: $font-color;
+                color: $secondary-color;
+                transition: 0.5s;
+            }
+        }
     }
 }
 
-@media (min-width:992px) {
-    .text h2 {
-        font-size: 3rem;
-    }
-
-    .text p, form {
-        font-size: 1.5rem;
-    }
-    nav{
-        font-size: 1.5rem;
-    }
-
-}

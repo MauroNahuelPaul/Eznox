@@ -1,9 +1,30 @@
-.article__img {
-    padding: 0;
-    object-fit: cover;
+.article{
+    &__img {
+        padding: 0;
+        object-fit: cover;
+    }
+    &__text {
+        text-align: center;
+    }
 }
-.article__text {
-    text-align: center;
+.evento{
+    &:hover {
+        color: $font-color;
+        border-radius: 20px;
+        background-color: $primary-color;
+        transition: 1s;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &__img{
+
+    }
+    &__titulo{
+        &:hover{
+            color: $font-color;
+            
+        }
+    }
 }
 
 // Libros
@@ -11,10 +32,9 @@
     width: 310px;
     height: 450px;
     border: 2px solid white;
-}
-
-.libro__portada:hover {
-    border: 5px solid $primary-color;
-    transition: 0.5s;
-    cursor:pointer;
+    &:hover {
+        border: 5px solid $primary-color;
+        transition: 0.5s;
+        cursor:pointer;
+    }
 }

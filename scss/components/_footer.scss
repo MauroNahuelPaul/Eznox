@@ -1,0 +1,10 @@
+footer {
+    a,i{
+        color: $font-color;
+        &:hover{
+            color: #8BBCE0;
+            transition: 0.5s;
+        }
+    }
+
+}

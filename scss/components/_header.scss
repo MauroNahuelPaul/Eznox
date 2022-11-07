@@ -15,12 +15,19 @@
         transition: 0.5s;
 
     }
-    &.active{
+
+    &.active {
         color: #8BBCE0;
     }
 }
 
-.navbar .titulo-pagina {
-    color: $font-color;
-    font-family: $primary-font-style;
+.navbar {
+    @include lg {
+        font-size: 1.5rem;
+    }
+    .titulo-pagina {
+        color: $font-color;
+        font-family: $primary-font-style;
+    }
+    
 }

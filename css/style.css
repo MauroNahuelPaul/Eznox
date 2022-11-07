@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-ul,
-ol {
+ul, ol {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -16,17 +15,7 @@ a, i {
   color: #FFFFFF;
 }
 avisited, ivisited {
-  text-decoration: none;
   color: #FFFFFF;
-}
-a:hover, i:hover {
-  color: #22577E;
-  border-radius: 20px;
-  background-color: #16213E;
-  transition: 1s;
-  color: #FFFFFF;
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .nav-link {
@@ -36,6 +25,14 @@ a:hover, i:hover {
 .text {
   font-family: "Roboto Serif", serif;
   color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .text h2 {
+    font-size: 3rem;
+  }
+  .text p, .text form {
+    font-size: 1.5rem;
+  }
 }
 
 .bg-main {
@@ -86,9 +83,22 @@ a:hover, i:hover {
   color: #8BBCE0;
 }
 
+@media (min-width: 992px) {
+  .navbar {
+    font-size: 1.5rem;
+  }
+}
 .navbar .titulo-pagina {
   color: #FFFFFF;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+footer a, footer i {
+  color: #FFFFFF;
+}
+footer a:hover, footer i:hover {
+  color: #8BBCE0;
+  transition: 0.5s;
 }
 
 .filtros--boton {
@@ -110,43 +120,41 @@ a:hover, i:hover {
 .email {
   background-color: #16213E;
 }
-
-.barra__email:focus {
+.email .barra__email:focus {
   outline: none;
   background-color: #22577E;
   color: #FFFFFF;
   transition: 0.5s;
 }
-
-.barra__boton {
+.email .barra__boton {
   background-color: #22577E;
   color: #FFFFFF;
   font-family: "Roboto Serif", serif;
 }
-.barra__boton:hover {
+.email .barra__boton:hover {
   background-color: #FFFFFF;
   color: #22577E;
   transition: 0.5s;
 }
 
-@media (min-width: 992px) {
-  .text h2 {
-    font-size: 3rem;
-  }
-  .text p, form {
-    font-size: 1.5rem;
-  }
-  nav {
-    font-size: 1.5rem;
-  }
-}
 .article__img {
   padding: 0;
   object-fit: cover;
 }
-
 .article__text {
   text-align: center;
+}
+
+.evento:hover {
+  color: #FFFFFF;
+  border-radius: 20px;
+  background-color: #16213E;
+  transition: 1s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.evento__titulo:hover {
+  color: #FFFFFF;
 }
 
 .libro__portada {
@@ -154,16 +162,10 @@ a:hover, i:hover {
   height: 450px;
   border: 2px solid white;
 }
-
 .libro__portada:hover {
   border: 5px solid #16213E;
   transition: 0.5s;
   cursor: pointer;
-}
-
-.acordion__encabezado:not(.collapsed) {
-  background-color: #16213E;
-  color: #FFFFFF;
 }
 
 .acordion__encabezado {
@@ -173,43 +175,50 @@ a:hover, i:hover {
   border-radius: 20px;
   /* border: 2px $primary-color) 20px; */
 }
-
+@media (min-width: 992px) {
+  .acordion__encabezado {
+    font-size: 2rem;
+  }
+}
+.acordion__encabezado:not(.collapsed) {
+  background-color: #16213E;
+  color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .acordion__encabezado:not(.collapsed) {
+    font-size: 2rem;
+  }
+}
 .acordion__texto {
   background-color: #7ACBCE;
   color: black;
   font-family: "Roboto Serif", serif;
   border-bottom: 2px;
 }
+@media (min-width: 992px) {
+  .acordion__texto {
+    font-size: 1.5rem;
+  }
+  .acordion__texto h3 {
+    font-size: 2rem;
+  }
+}
 
-.accordion-item, .accordion-header {
+.accordion-item,
+.accordion-header {
   background-color: transparent;
   border: 0;
 }
 
-@media (min-width: 992px) {
-  .acordion__encabezado:not(.collapsed) {
-    font-size: 2rem;
-  }
-  .acordion__encabezado {
-    font-size: 2rem;
-    /* border: 2px $primary-color) 20px; */
-  }
-  .acordion__texto {
-    font-size: 1.5rem;
-  }
-  .acordion__texto > h3 {
-    font-size: 2rem;
-  }
-}
 .ayuda-main {
   height: 800px;
 }
-
 @media (min-width: 992px) {
   .ayuda-main {
     height: 1080px;
   }
 }
+
 .formulario__input {
   width: 100%;
 }
@@ -220,12 +229,22 @@ a:hover, i:hover {
   color: #FFFFFF;
   transition: 0.5s;
 }
-
 @media (min-width: 992px) {
-  .datos-personales > .formulario__input {
+  .formulario__input.datos-personales {
     width: 49%;
   }
 }
+
+.enlace {
+  color: #FFFFFF;
+}
+.enlace:hover {
+  background-color: #16213E;
+  transition: 1s;
+  color: #FFFFFF;
+  border-radius: 20px;
+}
+
 .apartado {
   border: 5px solid #FFFFFF;
 }
