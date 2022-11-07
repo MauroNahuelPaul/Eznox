@@ -11,22 +11,22 @@ ol {
     margin: 0px;
 }
 
-a {
+a,i {
     text-decoration: none;
     color: $font-color;
-}
-
-a:visited {
-    text-decoration: none;
-    color: $font-color;
-}
-
-a:hover {
-    border-radius: 20px;
-    background-color: $primary-color;
-    transition: 1s;
-    color: $font-color;
-    cursor: pointer
+    &visited {
+        text-decoration: none;
+        color: $font-color;
+    }
+    &:hover {
+        color: $secondary-color;
+        border-radius: 20px;
+        background-color: $primary-color;
+        transition: 1s;
+        color: $font-color;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 .nav-link {
@@ -37,29 +37,34 @@ a:hover {
     font-family: $secondary-font-style;
     color: $font-color;
 }
-.bg-main {
-    background-color: $secondary-color;
-}
-.bg-section {
-    background-color: $primary-color;
-}
-footer a:hover ,i:hover{
-    color: $secondary-color;
-    text-decoration: underline;
+.bg{
+    &-main {
+        background-color: $secondary-color;
+    }
+    &-section {
+        background-color: $primary-color;
+    }
+    &-header {
+        background-color: #16213E;
+    }
+    &-footer{
+        background-color: #16213E;
+    }
+    
 }
 
 .barraB{
     background-color: #16213E;
     border-radius: 0px 20px 0px 20px;
     font-size: 2rem;
-}
-.barraB__img{
-    height: 60px;
-}
-.barraB__input{
-    background-color: transparent;
-    color: $font-color;
-    border: 0;
-    outline: none;
-    height: 70px;
+    &__img{
+        height: 60px;
+    }
+    &__input{
+        background-color: transparent;
+        color: $font-color;
+        border: 0;
+        outline: none;
+        height: 70px;
+    }
 }

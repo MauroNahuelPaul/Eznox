@@ -11,22 +11,22 @@ ol {
   margin: 0px;
 }
 
-a {
+a, i {
   text-decoration: none;
   color: #FFFFFF;
 }
-
-a:visited {
+avisited, ivisited {
   text-decoration: none;
   color: #FFFFFF;
 }
-
-a:hover {
+a:hover, i:hover {
+  color: #22577E;
   border-radius: 20px;
   background-color: #16213E;
   transition: 1s;
   color: #FFFFFF;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .nav-link {
@@ -41,14 +41,14 @@ a:hover {
 .bg-main {
   background-color: #22577E;
 }
-
 .bg-section {
   background-color: #16213E;
 }
-
-footer a:hover, i:hover {
-  color: #22577E;
-  text-decoration: underline;
+.bg-header {
+  background-color: #16213E;
+}
+.bg-footer {
+  background-color: #16213E;
 }
 
 .barraB {
@@ -56,11 +56,9 @@ footer a:hover, i:hover {
   border-radius: 0px 20px 0px 20px;
   font-size: 2rem;
 }
-
 .barraB__img {
   height: 60px;
 }
-
 .barraB__input {
   background-color: transparent;
   color: #FFFFFF;
@@ -69,31 +67,28 @@ footer a:hover, i:hover {
   height: 70px;
 }
 
-.bg-header {
-  background-color: #16213E;
-}
-
 .boton-opciones {
   height: 60px;
 }
 
+.nav-item .nav-link {
+  font-family: "Roboto Serif", serif;
+}
+.nav-item .nav-link:not(visited) {
+  color: #FFFFFF;
+}
 .nav-item .nav-link:hover {
   color: #8BBCE0;
   text-decoration: underline;
   transition: 0.5s;
 }
+.nav-item .nav-link.active {
+  color: #8BBCE0;
+}
 
 .navbar .titulo-pagina {
   color: #FFFFFF;
   font-family: "Roboto Condensed", sans-serif;
-}
-
-.nav-link {
-  font-family: "Roboto Serif", serif;
-}
-
-.nav-item .nav-link.active {
-  color: #8BBCE0;
 }
 
 .filtros--boton {
@@ -105,7 +100,6 @@ footer a:hover, i:hover {
   padding-left: 10px;
   font-family: "Roboto Serif", serif;
 }
-
 .filtros--boton:hover {
   background-color: #FFFFFF;
   color: #16213E;
@@ -114,25 +108,24 @@ footer a:hover, i:hover {
 }
 
 .email {
-  background-color: primary-color;
+  background-color: #16213E;
 }
 
 .barra__email:focus {
   outline: none;
-  background-color: secondary-color;
-  color: font-color;
+  background-color: #22577E;
+  color: #FFFFFF;
   transition: 0.5s;
 }
 
 .barra__boton {
-  background-color: secondary-color;
-  color: font-color;
-  font-family: secondary-font-style;
+  background-color: #22577E;
+  color: #FFFFFF;
+  font-family: "Roboto Serif", serif;
 }
-
 .barra__boton:hover {
-  background-color: font-color;
-  color: secondary-color;
+  background-color: #FFFFFF;
+  color: #22577E;
   transition: 0.5s;
 }
 
@@ -147,13 +140,13 @@ footer a:hover, i:hover {
     font-size: 1.5rem;
   }
 }
-.img-article {
+.article__img {
   padding: 0;
   object-fit: cover;
 }
 
-.text-article {
-  text-align: left;
+.article__text {
+  text-align: center;
 }
 
 .libro__portada {
@@ -217,12 +210,15 @@ footer a:hover, i:hover {
     height: 1080px;
   }
 }
-.email {
-  background-color: #16213E;
-}
-
 .formulario__input {
   width: 100%;
+}
+.formulario__input:focus {
+  background-color: #16213E;
+  border: 2px solid #16213E;
+  border-radius: 20px;
+  color: #FFFFFF;
+  transition: 0.5s;
 }
 
 @media (min-width: 992px) {
@@ -230,21 +226,6 @@ footer a:hover, i:hover {
     width: 49%;
   }
 }
-.form-boton:hover, .formulario__input:focus {
-  background-color: #22577E;
-  border: 2px solid #16213E;
-  border-radius: 20px;
-  color: #FFFFFF;
-  transition: 0.5s;
-}
-
-.formulario__input:hover {
-  background-color: #22577E;
-  border: 2px solid #16213E;
-  color: #FFFFFF;
-  transition: 0.5s;
-}
-
 .apartado {
   border: 5px solid #FFFFFF;
 }

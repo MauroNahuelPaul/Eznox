@@ -1,21 +1,26 @@
-.bg-header {
-    background-color: #16213E;
-}
 .boton-opciones {
     height: 60px;
 }
-.nav-item .nav-link:hover {
-    color: #8BBCE0;
-    text-decoration: underline;
-    transition: 0.5s;
+
+.nav-item .nav-link {
+    font-family: $secondary-font-style;
+
+    &:not(visited) {
+        color: $font-color;
+    }
+
+    &:hover {
+        color: #8BBCE0;
+        text-decoration: underline;
+        transition: 0.5s;
+
+    }
+    &.active{
+        color: #8BBCE0;
+    }
 }
+
 .navbar .titulo-pagina {
     color: $font-color;
     font-family: $primary-font-style;
-}
-.nav-link {
-    font-family: $secondary-font-style;
-}
-.nav-item .nav-link.active {
-    color: #8BBCE0;
 }
