@@ -69,23 +69,23 @@
         </nav>
     </header>
     <main class="bg-main py-3 text">
-        <div class="container">
+        <div class="container mt-5">
             <div class="border-bottom my-4">
                 <h1 class="h2 text">Iniciar sesión</h1>
             </div>
             <section class="formulario-ingreso">
-                <form class="" action="">
+                <form name="Iniciar" method="post" data-netlify="true" class="" action="">
                     <div class="">
-                        <input class="d-block formulario__input mb-3 ps-2" type="email"
-                            placeholder="Correo electrónico">
-                        <input class="d-block formulario__input mb-3 ps-2" type="password" placeholder="Contraseña">
+                        <input class="d-block formulario__input mb-3 ps-2" type="email" placeholder="Correo electrónico"
+                            name="Correo electrónico">
+                        <input class="d-block formulario__input mb-3 ps-2" type="password" placeholder="Contraseña"
+                            name="Contraseña">
                     </div>
                     <section class="">
-                        <a class=" mb-1 px-2 enlace" href="">¿Olvidaste tu contraseña?</a>
-                        <br>
-                        <a class=" mb-3 px-2 enlace" href="#formulario-registro">¿No tenés cuenta?</a>
-                        <br>
-                        <button class="form-boton mt-3 px-2" name="iniciar-sesion" type="button">Iniciar sesión</button>
+                        <a class="d-block" href=""><span class="enlace mb-1 px-2"> ¿Olvidaste tu contraseña?</span></a>
+                        <a class="d-block" href="#formulario-registro"><span class="mb-3 px-2 enlace"> ¿No tenés
+                                cuenta?</span></a>
+                        <button class="form-boton mt-3 px-2" name="iniciar-boton" type="submit">Iniciar sesión</button>
                     </section>
                 </form>
             </section>
@@ -94,50 +94,50 @@
                 <h2 class="h2 text">Regístrate</h2>
             </div>
             <section class="formulario-registro" id="formulario-registro">
-                <form action="">
+                <form action="" name="Registrarse">
                     <div class="">
-                        <input class="formulario__input mb-3 ps-2 datos-personales" type="email" placeholder="Nombres">
+                        <input class="formulario__input mb-3 ps-2 datos-personales" type="email" placeholder="Nombres" name="Nombre">
                         <input class="formulario__input mb-3 ps-2 float-lg-end datos-personales" type="password"
-                            placeholder="Apellidos">
+                            placeholder="Apellidos" name="Apellido">
                     </div>
                     <div class="">
-                        <input class="formulario__input mb-3 ps-2" type="email" placeholder="Correo electrónico">
-                        <input class="formulario__input mb-3 ps-2" type="password" placeholder="Contraseña">
-                        <input class="formulario__input mb-3 ps-2" type="password" placeholder="Confirmar contraseña">
+                        <input class="formulario__input mb-3 ps-2" type="email" placeholder="Correo electrónico" name="Correo electrónico">
+                        <input class="formulario__input mb-3 ps-2" type="password" placeholder="Contraseña" name="Contraseña">
+                        <input class="formulario__input mb-3 ps-2" type="password" placeholder="Confirmar contraseña" name="Confirmar contraseña">
                     </div>
                     <div class="">
                         <h3 class="text">Fecha de Nacimiento:</h3>
-                        <input class="" type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01"
+                        <input class="" type="date" name="fecha nacimiento" placeholder="dd-mm-yyyy" value="" min="1997-01-01"
                             max="2030-12-31">
                     </div>
                     <div class="py-3">
-                        <label class="text mx-1">Hombre:</label><input class="me-4" type="checkbox">
-                        <label class="text mx-1">Mujer:</label><input class="me-4" type="checkbox">
+                        <label class="text mx-1 sexo" for="hombre">Hombre:</label><input class="me-4" name="Sexo" type="radio" id="hombre">
+                        <label class="text mx-1 sexo" for="mujer">Mujer:</label><input class="me-4" name="Sexo" type="radio" id="mujer">
                     </div>
                     <a class="text px-2 enlace" href="#">¿Porqué debo brindar esta información?</a>
                     <span class="text d-block mt-3">
                         Al hacer clic en el Regístrate, muestras tu conformidad con nuestras
                         Condiciones y aceptas haber leído nuestra Política de uso de datos, incluida la sección sobre
                         Uso de cookies.</span>
-                    <button class="form-boton my-3 px-2" name="" type="button">Regístrate</button>
+                    <button class="form-boton my-3 px-2"  name="registrarse-boton" type="submit">Regístrate</button>
                 </form>
             </section>
         </div>
     </main>
 
-    <footer class="bg-header">
+    <footer class="bg-footer">
         <ul class="mx-3 py-3">
-            <li class="d-flex justify-content-between ">
-                <a class="" href="#">Copyright 2022-2022 by Refsnes Data.</a>
-                <a href=""><i class="bi bi-twitter"></i></a>
+            <li class="d-flex justify-content-between align-items-center">
+                <a class="" href="https://www.w3schools.com/about/about_copyright.asp">Copyright 2022-2022 by Refsnes Data.</a>
+                <a class="" href="https://twitter.com"><i class="bi bi-twitter"></i></a>
             </li>
-            <li class=" my-1 d-flex justify-content-between">
-                <a class="footer__text" href="#">Todos los derechos reservados</a>
-                <a href=""><i class="bi bi-facebook"></i></a>
+            <li class=" my-1 d-flex justify-content-between align-items-center">
+                <a class="" href="https://www.w3schools.com/about/about_copyright.asp">Todos los derechos reservados</a>
+                <a class="" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
             </li>
-            <li class="d-flex justify-content-between">
-                <a class="footer__text" href="#">Mauro Nahuel Paul</a>
-                <a href=""><i class="bi bi-instagram"></i></a>
+            <li class="d-flex justify-content-between align-items-center">
+                <a class="" href="https://github.com/MauroNahuelPaul">Mauro Nahuel Paul</a>
+                <a class="" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
             </li>
         </ul>
     </footer>

@@ -1,13 +1,15 @@
-.article{
+.article {
     &__img {
         padding: 0;
         object-fit: cover;
     }
+
     &__text {
         text-align: center;
     }
 }
-.evento{
+
+.evento {
     &:hover {
         color: $font-color;
         border-radius: 20px;
@@ -16,13 +18,13 @@
         cursor: pointer;
         text-decoration: none;
     }
-    &__img{
 
-    }
-    &__titulo{
-        &:hover{
+    &__img {}
+
+    &__titulo {
+        &:hover {
             color: $font-color;
-            
+
         }
     }
 }
@@ -32,9 +34,10 @@
     width: 310px;
     height: 450px;
     border: 2px solid white;
+
     &:hover {
         border: 5px solid $primary-color;
         transition: 0.5s;
-        cursor:pointer;
+        cursor: pointer;
     }
 }

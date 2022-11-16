@@ -100,6 +100,9 @@ footer a:hover, footer i:hover {
   color: #8BBCE0;
   transition: 0.5s;
 }
+footer i {
+  font-size: 2rem;
+}
 
 .filtros--boton {
   background-color: #16213E;
@@ -219,6 +222,10 @@ footer a:hover, footer i:hover {
   }
 }
 
+.formulario-ingreso, .formulario-registro {
+  margin-bottom: 270px;
+}
+
 .formulario__input {
   width: 100%;
 }
@@ -242,6 +249,14 @@ footer a:hover, footer i:hover {
   background-color: #16213E;
   transition: 1s;
   color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.form-boton:hover {
+  background-color: #16213E;
+  color: #FFFFFF;
+  transition: 0.5s;
+  border: 2px solid white;
   border-radius: 20px;
 }
 
