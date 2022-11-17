@@ -1,0 +1,10 @@
+.testimonial-group > .row {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    &>.col-4 {
+        display: inline-block;
+        margin: 0 110px;
+      }
+  }
+ 

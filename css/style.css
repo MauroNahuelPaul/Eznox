@@ -171,6 +171,16 @@ footer i {
   cursor: pointer;
 }
 
+.testimonial-group > .row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.testimonial-group > .row > .col-4 {
+  display: inline-block;
+  margin: 0 110px;
+}
+
 .acordion__encabezado {
   outline: none;
   background-color: #16213E;
