@@ -1,10 +1,15 @@
-.testimonial-group > .row {
+.testimonial-group>.row {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+    scrollbar-width: thin;
+    
+
     &>.col-4 {
         display: inline-block;
-        margin: 0 110px;
-      }
-  }
- 
+        margin: 40px 300px 40px 0px;
+        @include lg {
+            margin-right: 75px;
+        }
+    }
+}
